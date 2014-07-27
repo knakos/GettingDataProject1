@@ -36,3 +36,16 @@ myactivitysubjectaverages.txt contains eight variables:
 5. "WALKING_DOWNSTAIRS":  a numeric variable presenting the average (mean) value for the "Walking Downstairs" activity for any given individual and variable measured
 6. "VARIABLE": a text variable identifying the variable being measured
 7. "SUBJECT": a numeric (integer) variable identifying the subject being measured (1:30)
+
+====================
+
+The code works as follows (see also comments inside the code)
+
+1. The training dataset is retrieved, as is the subjects and activities dataset
+2. Appropriate variable names are set for the features identified ('features' definition as per original data set)
+3. The three datasets are then combined
+4. The process of 1 - 3 above is repeated for the testing dataset
+5. The training and testing datasets are then combined
+6. Activities are properly named and converted into factors to facilitate subsequent analysis
+7. myresults.txt is produced by extracting mean and standard deviation values from the combined training and testing datasets
+8. myactivitysubjectaverages.txt is produced by processing the combined training and testing datasets
